@@ -1,0 +1,47 @@
+name: medicaide
+description: A new Flutter application.
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^0.1.2
+  font_awesome_flutter: ^8.8.1
+  ff_navigation_bar: ^0.1.5
+  device_preview: ^0.4.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+flutter:
+
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/images/medicaide_logo.png
+    - assets/images/medicaide_logo_sans_texte.png
+    - assets/images/icon_doctor.png
+    - assets/images/icon_patient.png
+
+
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: assets/fonts/Roboto-Bold.ttf
+        - asset: assets/fonts/Roboto-Light.ttf
+        - asset: assets/fonts/Roboto-Medium.ttf
+        - asset: assets/fonts/Roboto-Regular.ttf
+    - family: Baloo Chettan 2
+      fonts:
+        - asset: assets/fonts/BalooChettan2-Bold.ttf
+        - asset: assets/fonts/BalooChettan2-ExtraBold.ttf
+        - asset: assets/fonts/BalooChettan2-Medium.ttf
+        - asset: assets/fonts/BalooChettan2-Regular.ttf
+        - asset: assets/fonts/BalooChettan2-SemiBold.ttf
