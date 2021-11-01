@@ -13,6 +13,7 @@ class CustomTextFieldWidget extends StatelessWidget {
   final Widget prefixIcon;
   final bool obscureText;
   final TextInputType type;
+  final String label;
 
   CustomTextFieldWidget(
       {this.hintText,
@@ -21,6 +22,7 @@ class CustomTextFieldWidget extends StatelessWidget {
         this.prefixIcon,
         this.suffixIcon,
         this.obscureText = false,
+        this.label,
         this.topLeft = 0.0,
         this.topRight = 0.0,
         this.bottomLeft = 0.0,
@@ -29,17 +31,18 @@ class CustomTextFieldWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Material(
-      elevation: 10.0,
+      elevation: 1.0,
       borderRadius: BorderRadius.only(
         topLeft: Radius.circular(topLeft),
         topRight: Radius.circular(topRight),
         bottomLeft: Radius.circular(bottomLeft),
         bottomRight: Radius.circular(bottomRight),
       ),
-      child: TextField(
+      child: TextFormField(
         keyboardType: type,
         obscureText: obscureText,
         decoration: kCustomTextFieldDecoration.copyWith(
+          labelText: label,
           hintText: hintText,
           prefix: Text(prefix),
           prefixIcon: prefixIcon,

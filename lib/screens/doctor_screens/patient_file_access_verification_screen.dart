@@ -12,11 +12,11 @@ class PatientFileAccessVerificationScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: kScaffoldBackgroundColor,
       body: Padding(
-        padding: EdgeInsets.only(
-          right: SizeConfig.safeBlockHorizontal * 7,
-          left: SizeConfig.safeBlockHorizontal * 7,
+         padding: EdgeInsets.only(
+          right: SizeConfig.safeBlockHorizontal * 5,
+          left: SizeConfig.safeBlockHorizontal * 5,
           top: SizeConfig.safeBlockVertical * 10,
-          bottom: SizeConfig.safeBlockVertical * 0.7,
+          bottom: SizeConfig.safeBlockVertical * 0.5,
         ),
         child: Container(
           child: Column(
@@ -31,7 +31,7 @@ class PatientFileAccessVerificationScreen extends StatelessWidget {
                 height: SizeConfig.safeBlockVertical * 1,
               ),
               Text(
-                "Le patient doit vous fournir le code d'accès reçu sur son mobile pour vous autoriser à accéder à son dossier médical",
+                "Le patient doit vous fournir le code d'accès reçu sur son mobile",
                 style: kSubtitleTextStyle.copyWith(color: Colors.black45),
                 textAlign: TextAlign.center,
               ),

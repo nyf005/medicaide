@@ -11,7 +11,7 @@ import '../../constant.dart';
 
 class DoctorHomeScreen extends StatelessWidget {
   static String id = 'doctor_home_screen';
-  static int tappedGestureDetector = 1;
+  static int selectedUser = 1;
 
   @override
   Widget build(BuildContext context) {
@@ -21,8 +21,8 @@ class DoctorHomeScreen extends StatelessWidget {
       children: <Widget>[
         Padding(
           padding: EdgeInsets.only(
-              left: SizeConfig.safeBlockHorizontal * 7,
-              right: SizeConfig.safeBlockHorizontal * 7,
+              left: SizeConfig.safeBlockHorizontal * 5,
+              right: SizeConfig.safeBlockHorizontal * 5,
               top: SizeConfig.safeBlockVertical * 7),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -44,27 +44,27 @@ class DoctorHomeScreen extends StatelessWidget {
                   ),
                 ],
               ),
-              SizedBox(height: 10.0),
+              SizedBox(height: SizeConfig.safeBlockVertical * 1),
               SubmitButton(
-                  vPadding: SizeConfig.blockSizeVertical * 2,
                   buttonLabel: 'Nouvelle consultation',
                   onPressed: () {
                     Navigator.pushNamed(context, SearchPatientScreen.id);
                   }),
-              SizedBox(height: 30.0),
+              SizedBox(height: SizeConfig.safeBlockVertical * 3),
             ],
           ),
         ),
         Padding(
-          padding: EdgeInsets.only(left: SizeConfig.safeBlockHorizontal * 7),
+          padding: EdgeInsets.only(left: SizeConfig.safeBlockHorizontal * 5),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
               Text(
                 "Consultés récemment",
-                style: kBlackTitleTextStyle,
+                style: kBlackTitleTextStyle.copyWith(
+                          fontSize: SizeConfig.safeBlockHorizontal * 5),
               ),
-              SizedBox(height: 10.0),
+              SizedBox(height: SizeConfig.safeBlockVertical * 1),
               Container(
                 height: 100.0,
                 child: ListView.builder(
@@ -76,7 +76,7 @@ class DoctorHomeScreen extends StatelessWidget {
                       child: GestureDetector(
                         onTap: () {},
                         child: CircleImage(
-                          border: tappedGestureDetector == index
+                          border: selectedUser == index
                               ? Border.all(color: kPrimaryColor, width: 5.0)
                               : Border.all(
                                   color: Colors.transparent,
@@ -92,13 +92,11 @@ class DoctorHomeScreen extends StatelessWidget {
             ],
           ),
         ),
-        SizedBox(
-          height: 30.0,
-        ),
+        SizedBox(height: SizeConfig.safeBlockVertical * 3),
         Expanded(
           child: Padding(
             padding: EdgeInsets.symmetric(
-                horizontal: SizeConfig.safeBlockHorizontal * 7),
+                horizontal: SizeConfig.safeBlockHorizontal * 5),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
@@ -107,7 +105,8 @@ class DoctorHomeScreen extends StatelessWidget {
                   children: <Widget>[
                     Text(
                       "Didier Drogba",
-                      style: kBlackTitleTextStyle,
+                      style: kBlackTitleTextStyle.copyWith(
+                          fontSize: SizeConfig.safeBlockHorizontal * 5),
                     ),
                     GestureDetector(
                       onTap: () {
@@ -118,7 +117,9 @@ class DoctorHomeScreen extends StatelessWidget {
                       child: Row(children: <Widget>[
                         Text(
                           "Voir les informations",
-                          style: TextStyle(color: kPrimaryColor),
+                          style: TextStyle(
+                              color: kPrimaryColor,
+                              fontSize: SizeConfig.safeBlockHorizontal * 4),
                         ),
                         SizedBox(width: 5.0),
                         Container(

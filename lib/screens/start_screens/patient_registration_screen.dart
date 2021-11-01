@@ -17,7 +17,7 @@ class PatientRegistrationScreen extends StatelessWidget {
           builder: (BuildContext context, BoxConstraints viewportConstraints) {
             return SingleChildScrollView(
               padding: EdgeInsets.symmetric(
-                  horizontal: SizeConfig.safeBlockHorizontal * 7),
+                  horizontal: SizeConfig.safeBlockHorizontal * 5),
               child: ConstrainedBox(
                 constraints: BoxConstraints(
                   minHeight: viewportConstraints.maxHeight,
@@ -89,7 +89,6 @@ class PatientRegistrationScreen extends StatelessWidget {
                     ),
 
                     SubmitButton(
-                      vPadding: SizeConfig.blockSizeVertical * 2,
                       buttonLabel: 'Continuer',
                       onPressed: () =>
                           Navigator.pushNamed(context, PhotoUploadScreen.id),

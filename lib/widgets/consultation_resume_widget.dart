@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:medicaide/utils/size_config.dart';
 import 'package:medicaide/widgets/submit_button_widget.dart';
 
 import '../constant.dart';
@@ -74,7 +73,6 @@ class ConsultationResumeWidget extends StatelessWidget {
                       height: 15.0,
                     ),
                     SubmitButton(
-                      vPadding: SizeConfig.blockSizeVertical * 1,
                       buttonLabel: 'Voir la consultation',
                       onPressed: () {},
                     ),

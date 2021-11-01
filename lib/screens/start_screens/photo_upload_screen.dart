@@ -13,8 +13,8 @@ class PhotoUploadScreen extends StatelessWidget {
       backgroundColor: kScaffoldBackgroundColor,
       body: Padding(
         padding: EdgeInsets.symmetric(
-            horizontal: SizeConfig.safeBlockHorizontal * 7,
-            vertical: SizeConfig.safeBlockVertical * 15),
+            horizontal: SizeConfig.safeBlockHorizontal * 5,
+            vertical: SizeConfig.safeBlockVertical * 10),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -52,7 +52,6 @@ class PhotoUploadScreen extends StatelessWidget {
               shape: CircleBorder(),
             ),
             SubmitButton(
-              vPadding: SizeConfig.blockSizeVertical * 2,
               buttonLabel: 'Continuer',
               onPressed: () {
                 Navigator.pushNamed(context, DoctorHomePage.id);

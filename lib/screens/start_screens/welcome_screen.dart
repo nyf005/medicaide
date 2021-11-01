@@ -18,8 +18,8 @@ class WelcomeScreen extends StatelessWidget {
           Expanded(
             child: Container(
               padding: EdgeInsets.symmetric(
-                  horizontal: SizeConfig.safeBlockHorizontal * 7,
-                  vertical: SizeConfig.safeBlockVertical * 7),
+                  horizontal: SizeConfig.safeBlockHorizontal * 5,
+                  vertical: SizeConfig.safeBlockVertical * 10),
               decoration: BoxDecoration(
                 gradient: LinearGradient(
                   colors: [

@@ -17,7 +17,7 @@ class LoginScreen extends StatelessWidget {
       backgroundColor: kScaffoldBackgroundColor,
       body: Padding(
         padding: EdgeInsets.symmetric(
-          horizontal: SizeConfig.safeBlockHorizontal * 7,
+          horizontal: SizeConfig.safeBlockHorizontal * 5,
         ),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -52,7 +52,6 @@ class LoginScreen extends StatelessWidget {
               height: SizeConfig.safeBlockVertical * 4,
             ),
             SubmitButton(
-              vPadding: SizeConfig.blockSizeVertical * 2,
               buttonLabel: "Sidentifier",
               onPressed: () {
                 Navigator.pushNamed(context, PhoneNumberVerificationScreen.id);

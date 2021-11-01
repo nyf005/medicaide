@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+
 const kScaffoldBackgroundColor = Color(0xFFECEFF3);
 const kPrimaryColor = Color(0xFF6d91c9);
 const kSecondaryColor = Colors.teal;
@@ -16,12 +17,13 @@ const kSubtitleTextStyle = TextStyle(
     color: Colors.black54,
     fontFamily: 'Roboto',
     fontWeight: FontWeight.w400,
-    fontSize: 14.0);
+    height: 1.3,
+    fontSize: 17.0);
 
 const kBlackTitleTextStyle = TextStyle(
     color: Colors.black,
     fontFamily: 'Roboto',
-    fontSize: 16.0,
+    fontSize: 20.0,
     fontWeight: FontWeight.w500);
 
 const kButtonLabelTextStyle =

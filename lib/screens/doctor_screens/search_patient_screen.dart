@@ -58,7 +58,6 @@ class SearchPatientScreen extends StatelessWidget {
               height: SizeConfig.safeBlockVertical * 4,
             ),
             SubmitButton(
-              vPadding: SizeConfig.blockSizeVertical * 2,
               buttonLabel: "Rechercher",
               onPressed: () {
                 Navigator.pushNamed(context, SearchPatientResultScreen.id);

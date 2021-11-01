@@ -16,10 +16,9 @@ class RoleSelectionScreen extends StatelessWidget {
       backgroundColor: kScaffoldBackgroundColor,
       body: Padding(
         padding: EdgeInsets.only(
-          right: SizeConfig.safeBlockHorizontal * 7,
-          left: SizeConfig.safeBlockHorizontal * 7,
-          top: SizeConfig.safeBlockVertical * 15,
-          bottom: SizeConfig.safeBlockVertical * 0.7,
+          right: SizeConfig.safeBlockHorizontal * 5,
+          left: SizeConfig.safeBlockHorizontal * 5,
+          top: SizeConfig.safeBlockVertical * 10,
         ),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,

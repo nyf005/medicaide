@@ -1,6 +1,7 @@
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:medicaide/screens/doctor_screens/add_lab_test_screen.dart';
 import 'package:medicaide/screens/doctor_screens/doctor_home_page.dart';
 import 'package:medicaide/screens/doctor_screens/doctor_home_screen.dart';
 import 'package:medicaide/screens/doctor_screens/doctor_messages_screen.dart';
@@ -37,6 +38,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       builder: DevicePreview.appBuilder,
+      debugShowCheckedModeBanner: false,
       title: 'Medicaide',
       theme: ThemeData(
         fontFamily: 'Roboto',
@@ -62,6 +64,7 @@ class MyApp extends StatelessWidget {
         PatientFileAccessVerificationScreen.id: (context) =>
             PatientFileAccessVerificationScreen(),
         PatientMedicalFile.id: (context) => PatientMedicalFile(),
+        AddLabTestScreen.id: (context) => AddLabTestScreen(),
       },
     );
   }

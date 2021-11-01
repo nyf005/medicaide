@@ -13,8 +13,7 @@ class CircleImage extends StatelessWidget {
       child: Container(
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(100.0),
-          border: border,
-          
+          border: border,         
           image: DecorationImage(
             fit: BoxFit.cover,
             image: NetworkImage(imageLink),

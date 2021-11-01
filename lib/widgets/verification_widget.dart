@@ -74,7 +74,6 @@ class _VerificationWidgetState extends State<VerificationWidget> {
                 height: SizeConfig.safeBlockHorizontal * 3,
               ),
               SubmitButton(
-                  vPadding: SizeConfig.blockSizeVertical * 2,
                   buttonLabel: 'Vérifier',
                   onPressed: () => matchOtp(route)),
               SizedBox(
@@ -270,7 +269,7 @@ class OtpInputWidget extends StatelessWidget {
         bottomLeft: Radius.circular(5.0),
         bottomRight: Radius.circular(5.0),
       ),
-      elevation: 10.0,
+      elevation: 1.0,
       child: Container(
         width: 48.0,
         height: 48.0,

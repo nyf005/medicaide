@@ -13,6 +13,7 @@ dependencies:
   font_awesome_flutter: ^8.8.1
   ff_navigation_bar: ^0.1.5
   device_preview: ^0.4.4
+  flutter_speed_dial: ^1.2.5
 
 dev_dependencies:
   flutter_test:

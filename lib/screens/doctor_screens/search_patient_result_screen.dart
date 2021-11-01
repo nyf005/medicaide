@@ -64,7 +64,6 @@ class SearchPatientResultScreen extends StatelessWidget {
               ],
             ),
             SubmitButton(
-              vPadding: SizeConfig.blockSizeVertical * 2,
               buttonLabel: "Accéder au dossier",
               onPressed: () {
                 Navigator.pushNamed(
